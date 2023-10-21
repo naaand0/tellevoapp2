@@ -1,0 +1,72 @@
+.input{
+    font-size: 500;
+}
+
+ion-item{
+    --background:'#f1f1f1';
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.header{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    .subTitle{
+        color: gray;
+        font-size: 0.9rem;
+
+    }
+    title{
+        font-size: 2rem;
+    }
+}
+
+.signupLink{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    position: absolute;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    right: 0;
+
+    p{
+        font-size: 0.9rem;
+
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.forgotPassword{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-decoration: none;
+
+    }
+
+
+}
+
+.boton1{
+    align-content:normal;
+    margin-left: 150px;
+}
+
+
+#avatar{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.wobble-horizontal-bottom{animation:wobble-horizontal-bottom .8s linear both} @keyframes wobble-horizontal-bottom{0%,100%{transform:translateX(0);transform-origin:50% 50%}15%{transform:translateX(-30px) rotate(-6deg)}30%{transform:translateX(15px) rotate(6deg)}45%{transform:translateX(-15px) rotate(-3.6deg)}60%{transform:translateX(9px) rotate(2.4deg)}75%{transform:translateX(-6px) rotate(-1.2deg)}}

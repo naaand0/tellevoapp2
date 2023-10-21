@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">
+    ¡Bienvenido! {{username}}
+    <p class="subTitle">{{username}}</p>
+  </ion-title>
+ 
+</div>
+<div>
+  <ion-item>
+    <ion-input class="input" placeholder="Ingrese nombre" class="input" id="nombre" ></ion-input>
+    <ion-icon name="person-outline"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-input class="input" placeholder="Ingrese Apellido" class="input" id="apellido"></ion-input>
+    <ion-icon name="person-outline"></ion-icon>
+  </ion-item>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Seleccione su Sede" id="sede">
+        <ion-select-option value="Antonio Varas">Antonio Varas</ion-select-option>
+        <ion-select-option value="Alonso de Ovalle">Alonso de Ovalle</ion-select-option>
+        <ion-select-option value="Plaza Oeste">Plaza Oeste</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Seleccione su Carrera" id="carrera">
+        <ion-select-option value="Ingenieria Informática">Ingeniería Informática</ion-select-option>
+        <ion-select-option value="Turismo y Hotelería">Turismo y Hotelería</ion-select-option>
+        <ion-select-option value="Gastronomía">Gastronomía</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</div>
+<ion-button class="boton3"  (click)="guardarDatos()"  >GUARDAR</ion-button>
+
+<ion-button class="boton4"   [routerLink]="['/login']"  >CERRAR SESIÓN</ion-button>
+</ion-content>
